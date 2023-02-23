@@ -14,7 +14,17 @@
 </head>
 <body>
     <header>
-        <div id="blue-stripe"></div>
+        <div id="blue-stripe">
+            <ul>
+                <li>
+                    <a href=""></a>
+                    <a href="#">DC POWER VISA</a>
+                </li>
+                <li>
+                    <a href="#">ADDITIONAL DC SITES</a>
+                </li>
+            </ul>
+        </div>
         <div class="container">
             <figure>
                 <a href="#"> <img src="/img/dc-logo.png" alt="logo"></a>

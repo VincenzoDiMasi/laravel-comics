@@ -7,8 +7,23 @@ header {
     // display: flex;
 
     #blue-stripe {
-        height: 20px;
+        height: 30px;
         background-color: $main-blue;
+        color: white;
+        padding: 3px 12.5%;
+
+        ul {
+            display: flex;
+            margin: 0;
+            justify-content: flex-end;
+            li {
+                a {
+                    color: white;
+                    margin-left: 3rem;
+                    font-size: 8px;
+                }
+            }
+        }
     }
 
     #jumbotron {
