@@ -1,3 +1,7 @@
+@php
+ $nav_links = config('navbarLinks')   
+@endphp
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,24 +14,22 @@
 </head>
 <body>
     <header>
-        <div class="header-stripe"></div>
-        <div class="nav-wrapper">
-            <div class="container">
-                <nav>
-                    <div class="main-nav-logo">
-                        <img src="./img/dc-logo.png" alt="dc logo">
-                    </div>
-                    <div class="nav-list">
+        <div class="container">
+            <figure>
+                <a href="#"> <img src="/img/dc-logo.png" alt="logo"></a>
+            </figure>
+            <nav>
                         <ul>
+                            @foreach ($nav_links as $nav_link)
                             <li >
-                                <a href="">a</a>
+                                <a href="{{$nav_link['link']}}" >{{$nav_link['name']}}</a>
                             </li>
-
+                            @endforeach
                         </ul>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </header>
+                    </nav>
+                    
+                </div>
+                
+            </header>
 </body>
 </html>

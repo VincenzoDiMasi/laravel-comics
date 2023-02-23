@@ -1,38 +1,37 @@
-@import 'colors';
-header{
-    min-height: 150px;
-    .header-stripe{
-        min-height: 20px;
-        background-color: $main-blue;
-    }
-    .nav-wrapper{
-        height: 160px;
-        nav{
-            display: flex;
-            justify-content: space-between;
-            height: 160px;
-            .main-nav-logo{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            .nav-list{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            ul{
-                display: flex;
-                li{
-                    padding: 0;
-                    margin: 0 0.6rem;
-                    a{
-                        padding: 50% 8px;
-                        &:hover{
-                            color: $main-blue;
-                        }
-                    }
+@import 'generics';
+
+header {
+    background-color: white;
+    height: 100px;
+    // display: flex;
+    
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+img {
+    margin-top: 15px;
+    height: 70px;
+    
+}
+nav {
+    ul {
+        display: flex;
+        gap: 1.5rem;
+        li {
+            a {
+                text-transform: uppercase;
+                color: grey;
+                font-size: 12px;
+                font-weight: bold;
+                
+                &.active {
+                    color: dodgerblue;
+                    border-bottom: 2px solid dodgerblue;
                 }
+                
             }
         }
     }
