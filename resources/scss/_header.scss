@@ -1,9 +1,21 @@
 @import 'generics';
+@import 'colors';
 
 header {
     background-color: white;
     height: 100px;
     // display: flex;
+
+    #blue-stripe {
+        height: 20px;
+        background-color: $main-blue;
+    }
+
+    #jumbotron {
+        min-height: 400px;
+        background-image: url(/img/jumbotron.jpg);
+        background-position: top center;
+    }
     
 }
 .container {
@@ -13,6 +25,7 @@ header {
 }
 img {
     margin-top: 15px;
+    margin-bottom: 15px;
     height: 70px;
     
 }
@@ -27,10 +40,10 @@ nav {
                 font-size: 12px;
                 font-weight: bold;
                 
-                &.active {
-                    color: dodgerblue;
-                    border-bottom: 2px solid dodgerblue;
+                &:hover{
+                    color: $main-blue;
                 }
+
                 
             }
         }

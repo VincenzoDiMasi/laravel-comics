@@ -14,6 +14,7 @@
 </head>
 <body>
     <header>
+        <div id="blue-stripe"></div>
         <div class="container">
             <figure>
                 <a href="#"> <img src="/img/dc-logo.png" alt="logo"></a>
@@ -26,10 +27,13 @@
                             </li>
                             @endforeach
                         </ul>
-                    </nav>
+            </nav>
                     
-                </div>
+        </div>
+        <div id="jumbotron">
+
+        </div>
                 
-            </header>
+     </header>
 </body>
 </html>
